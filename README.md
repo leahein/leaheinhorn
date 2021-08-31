@@ -1,6 +1,6 @@
 # Leah Einhorn
 
-This is my persoonal website. It can be found at [leaheinhorn.dev](https://leaheinhorn.dev).
+This is my personal website. It can be found at [leaheinhorn.dev](https://leaheinhorn.dev).
 
 ## Built With
 
