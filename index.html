@@ -37,14 +37,45 @@
     gtag('config', 'G-7Y2P95FV1G');
   </script>
 
+  <script>
+    /** Set dark or light mode to the document body */
+    function darkOrLight() {
+
+      var body = document.body
+      body.style.backgroundColor ?
+      body.setAttribute('style', 'background-color: none; color: none;') :
+      body.setAttribute('style', 'background-color: #181818; color: white;')
+
+      var buttonDarkMode = document.getElementsByClassName('button-dark-mode')[0]
+      buttonDarkMode.innerText == "DARK MODE" ?
+        buttonDarkMode.innerText = "LIGHT MODE" :
+        buttonDarkMode.innerText = "DARK MODE"
+
+    }
+
+  </script>
+
+
 </head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
+
+    <div class="row u-pull-right">
+
+      <div class="column" style="margin-top: 15%">
+        <button class="button-dark-mode" onclick="darkOrLight()">
+          Dark Mode
+        </button>
+      </div>
+
+    </div>
+
     <div class="row">
-      <div class="column" style="margin-top: 25%">
+
+      <div class="column" style="margin-top: 20%">
 
         <h5>Hey there 👋, I'm Leah Einhorn.</h5>
 
